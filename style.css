@@ -210,16 +210,8 @@ section.topo-do-site .flex {
 /* ===========================
    ESTILO MINHAS ESPECIALIDADES
    =========================== */
-
-.especialidades-box a.link-box {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: inherit; /* mantém a cor do texto original */
-  text-decoration: none; /* remove sublinhado */
-}
-.especialidades-box a.link-box:hover {
-  text-decoration: none; /* garante sem sublinhado no hover */
+section.especialidades h2 {
+  margin-bottom: 40px; /* aumenta o espaço abaixo do título */
 }
 
 section.especialidades {
@@ -232,18 +224,27 @@ section.especialidades {
 section.especialidades .flex {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* alinha pelo topo */
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 30px;
 }
 
+/* === Cada box === */
 .especialidades .especialidades-box {
   color: #fff;
   padding: 40px;
   border-radius: 20px;
   border: 2px solid #333131;
-  margin-top: 45px;
   transition: 0.2s;
+  width: 320px; /* largura fixa */
+  min-height: 300px; /* altura mínima */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* conteúdo começa de cima */
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden; /* evita o box estourar pros lados */
 }
 
 .especialidades .especialidades-box:hover {
@@ -257,10 +258,29 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box h3 {
-  font-size: 28px;
-  margin: 15px 0;
+  font-size: 20px;
+  margin: 15px 0 10px;
 }
 
+.especialidades .especialidades-box p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  word-wrap: break-word; /* quebra o texto se for longo */
+}
+
+/* === Responsividade === */
+@media (max-width: 1020px) {
+  .especialidades .especialidades-box {
+    width: 45%; /* dois por linha */
+  }
+}
+
+@media (max-width: 700px) {
+  .especialidades .especialidades-box {
+    width: 100%; /* um por linha */
+  }
+}
 /* ===========================
    SEÇÃO SOBRE
    =========================== */
@@ -356,7 +376,7 @@ section.portifolio .flex {
   background-color: #333131c7;
   background-size: cover;
   background-position: 100% 0%;
-  transition: 0.8s;
+  transition: .9s;
   position: relative;
 }
 
