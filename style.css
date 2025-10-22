@@ -224,9 +224,24 @@ section.especialidades {
 section.especialidades .flex {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* alinha pelo topo */
+  align-items: stretch; /* estica todos os boxes para a mesma altura */
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.especialidades .especialidades-box {
+  flex: 1 1 320px; /* faz todos os boxes crescerem igualmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid #333131;
+  transition: 0.2s;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* === Cada box === */
