@@ -288,12 +288,15 @@ section.especialidades .flex {
 @media (max-width: 1020px) {
   .especialidades .especialidades-box {
     width: 45%; /* dois por linha */
+    min-height: auto; /* deixa o tamanho se ajustar ao conteúdo */
   }
 }
 
 @media (max-width: 700px) {
   .especialidades .especialidades-box {
     width: 100%; /* um por linha */
+    padding: 20px; /* ainda menor para caber no celular */
+    min-height: auto; /* ajusta automaticamente */
   }
 }
 /* ===========================
