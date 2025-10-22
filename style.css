@@ -230,7 +230,7 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-  flex: 1 1 320px; /* faz todos os boxes crescerem igualmente */
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
