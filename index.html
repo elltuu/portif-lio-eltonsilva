@@ -4,11 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Elton Silva — Analista de Dados & Business Intelligence. Transformo dados em decisões com Power BI, R/Shiny, Python, IA e automação."
+    />
+    <meta name="author" content="Elton Jose da Silva" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Elton Silva — Analista de Dados & BI" />
+    <meta
+      property="og:description"
+      content="Transformo dados em decisões: Power BI, R/Shiny, Python, IA e automação."
+    />
+    <meta property="og:image" content="images/portióliogreen.png" />
+
+    <!-- Favicon (monograma ES) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23122f5b'/><text x='50' y='69' font-size='50' font-family='Georgia,serif' font-weight='bold' fill='%23ffffff' text-anchor='middle'>ES</text></svg>"
+    />
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -21,69 +44,64 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Elton Silva</title>
+    <title>Elton Silva — Analista de Dados & BI</title>
   </head>
   <body>
     <!-- ===========================
-              CABEÇALHO
-      ============================ -->
+         CABEÇALHO
+    ============================ -->
     <header>
       <div class="interface">
-        <div class="logo">
-          <a href="#">
-            <img src="#" alt="" />
-          </a>
-        </div>
-        <!--logo-->
+        <a href="#inicio" class="logo" aria-label="Elton Silva - início">
+          <span class="logo-mark">ES</span>
+          <span class="logo-text">Elton Silva</span>
+        </a>
 
-        <nav class="menu-desktop">
+        <nav class="menu-desktop" aria-label="Navegação principal">
           <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#especialidades">Especialidades</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#inicio" data-i18n data-pt="Início" data-en="Home">Início</a></li>
+            <li><a href="#sobre" data-i18n data-pt="Sobre" data-en="About">Sobre</a></li>
+            <li><a href="#skills" data-i18n data-pt="Competências" data-en="Skills">Competências</a></li>
+            <li><a href="#experiencia" data-i18n data-pt="Experiência" data-en="Experience">Experiência</a></li>
+            <li><a href="#portfolio" data-i18n data-pt="Projetos" data-en="Projects">Projetos</a></li>
+            <li><a href="#formacao" data-i18n data-pt="Formação" data-en="Education">Formação</a></li>
           </ul>
         </nav>
 
-        <div class="btn-contato">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=eltonjs11@gmail.com"
-            target="_blank"
-          >
-            <button>Contato</button>
-          </a>
+        <div class="header-actions">
+          <button class="lang-switch" id="lang-switch" aria-label="Trocar idioma">
+            <i class="bi bi-translate"></i>
+            <span id="lang-label">EN</span>
+          </button>
+          <div class="btn-contato menu-desktop">
+            <a href="#contato">
+              <button data-i18n data-pt="Contato" data-en="Contact">Contato</button>
+            </a>
+          </div>
         </div>
-        <!--btn-contato-->
-        <div class="btn-abrir-menu" id="btn-menu">
+
+        <div class="btn-abrir-menu" id="btn-menu" aria-label="Abrir menu">
           <i class="bi bi-list"></i>
         </div>
-        <!--btn-abrir-menu-->
 
         <div class="menu-mobile" id="menu-mobile">
           <div class="btn-fechar">
-            <i class="bi bi-box-arrow-right"></i>
+            <i class="bi bi-x-lg"></i>
           </div>
-          <nav>
+          <nav aria-label="Navegação mobile">
             <ul>
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#especialidades">Especialidades</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#portfolio">Projetos</a></li>
-              <li>
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=eltonjs11@gmail.com"
-                  target="_blank"
-                >
-                  Contato
-                </a>
-              </li>
+              <li><a href="#inicio" data-i18n data-pt="Início" data-en="Home">Início</a></li>
+              <li><a href="#sobre" data-i18n data-pt="Sobre" data-en="About">Sobre</a></li>
+              <li><a href="#skills" data-i18n data-pt="Competências" data-en="Skills">Competências</a></li>
+              <li><a href="#experiencia" data-i18n data-pt="Experiência" data-en="Experience">Experiência</a></li>
+              <li><a href="#portfolio" data-i18n data-pt="Projetos" data-en="Projects">Projetos</a></li>
+              <li><a href="#formacao" data-i18n data-pt="Formação" data-en="Education">Formação</a></li>
+              <li><a href="#contato" data-i18n data-pt="Contato" data-en="Contact">Contato</a></li>
             </ul>
           </nav>
         </div>
-        <!--menu-mobile-->
         <div class="overlay-menu" id="overlay"></div>
       </div>
-      <!--interface-->
     </header>
 
     <!-- ===========================
@@ -95,232 +113,400 @@
         <div class="interface">
           <div class="flex">
             <div class="txt-topo-site">
-              <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL <span>.</span></h1>
-              <p>
-                Profissional de Dados com experiência em ETL, análise e criação
-                de dashboards interativos e automação de relatórios para suporte
-                à tomada de decisão. Domínio de Python, SQL, R Studio, Power BI,
-                Databricks, HTML e CSS, com foco em Business Intelligence e
-                desenvolvimento de indicadores de performance (KPIs). Atuação em
-                projetos de modelagem quantitativa, automatização de scripts,
-                criação de alertas e desenvolvimento de métricas a partir de
-                dados de mercado, científicos e dados gerenciais. Experiência na
-                aplicação de métodos estatísticos e técnicas de machine learning
-                para identificação de padrões atípicos, análise de anomalias e
-                apoio a estudos quantitativos. Cursando Análise e
-                Desenvolvimento de Sistemas, com experiência prática em
-                modelagem, análise e visualização de dados estatísticos.
+              <span class="eyebrow" data-i18n data-pt="Analista de Dados &amp; Business Intelligence" data-en="Data Analyst &amp; Business Intelligence">Analista de Dados &amp; Business Intelligence</span>
+              <h1 data-i18n data-pt="Transformo dados em <span>decisões.</span>" data-en="I turn data into <span>decisions.</span>">Transformo dados em <span>decisões.</span></h1>
+              <p data-i18n
+                data-pt="Sou Analista de Dados com experiência no desenvolvimento de soluções analíticas de ponta a ponta, desde a engenharia e modelagem dos dados até a construção de dashboards executivos e a geração de insights estratégicos para o negócio."
+                data-en="I'm a Data Analyst experienced in building end-to-end analytical solutions — from data engineering and modeling to executive dashboards and strategic business insights.">
+                Sou Analista de Dados com experiência no desenvolvimento de soluções analíticas de ponta a ponta, desde a engenharia e modelagem dos dados até a construção de dashboards executivos e a geração de insights estratégicos para o negócio.
               </p>
 
-              <div class="btn-contato">
-                <a
-                  href="https://drive.google.com/file/d/1m6EKTo44MmYtOerPilR9DoffyuYYRVGn/view?usp=drive_link"
-                  target="_blank"
-                >
-                  <button>Visualizar Currículo</button>
+              <div class="hero-stack" data-i18n data-pt="Power BI · R / Shiny · Python · SQL · Databricks · IA &amp; Automação" data-en="Power BI · R / Shiny · Python · SQL · Databricks · AI &amp; Automation">
+                Power BI · R / Shiny · Python · SQL · Databricks · IA &amp; Automação
+              </div>
+
+              <div class="hero-cta">
+                <a href="docs/ELTON SILVA.pdf" target="_blank" rel="noopener">
+                  <button class="btn-primary">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span data-i18n data-pt="Currículo" data-en="Resume">Currículo</span>
+                  </button>
+                </a>
+                <a href="#portfolio">
+                  <button class="btn-ghost" data-i18n data-pt="Ver projetos" data-en="See projects">Ver projetos</button>
                 </a>
               </div>
-              <!--btn-contato-->
+
+              <div class="btn-social hero-social">
+                <a href="https://www.linkedin.com/in/elltonjose/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <button><i class="bi bi-linkedin"></i></button>
+                </a>
+                <a href="https://github.com/elltuu" target="_blank" rel="noopener" aria-label="GitHub">
+                  <button><i class="bi bi-github"></i></button>
+                </a>
+                <a href="mailto:eltonjs11@gmail.com" aria-label="E-mail">
+                  <button><i class="bi bi-envelope"></i></button>
+                </a>
+              </div>
             </div>
-            <!--txt-topo-site-->
 
             <div class="img-topo-site">
-              <img src="images/modelo.jpg" alt="" />
+              <div class="avatar-ring">
+                <div class="avatar-mono">ES</div>
+              </div>
             </div>
-            <!--img-topo-site-->
           </div>
-          <!--flex-->
         </div>
-        <!--interface-->
       </section>
-      <!--topo-do-site-->
-
-      <!-- ===========================
-             ESPECIALIDADES
-        ============================ -->
-      <section class="especialidades" id="especialidades">
-        <div class="interface">
-          <h2 class="titulo">
-            <span>SOFT SKILLS</span> & HARD SKILLS <span>.</span>
-          </h2>
-
-          <div class="flex">
-            <div class="especialidades-box">
-              <i class="bi bi-code-square"></i>
-              <h3></h3>
-              <p>
-                Profissional colaborativo, com forte habilidade em trabalho em
-                equipe e comunicação clara. Demonstrando adaptabilidade diante
-                de novos desafios, gestão eficiente do tempo e pensamento
-                estratégico voltado a resultados.
-              </p>
-            </div>
-            <!--especialidades-box-->
-
-            <div class="especialidades-box">
-              <i class="bi bi-database-fill-add"></i>
-              <h3></h3>
-              <p>
-                Experiência em Python, Rstudio, SQL, HTML e C#, complementada
-                por habilidades avançadas em Power BI e Google Looker Studio
-                para desenvolvimento de dashboards interativos e análises de
-                dados precisas. Possuo também conhecimentos em HTML e CSS,
-                aplicando boas práticas de desenvolvimento e apresentação de
-                projetos de forma clara e eficiente.
-              </p>
-              <p></p>
-            </div>
-            <!--especialidades-box-->
-          </div>
-          <!--flex-->
-        </div>
-        <!--interface-->
-      </section>
-      <!--especialidades-->
 
       <!-- ===========================
              SOBRE
         ============================ -->
-      >
       <section class="sobre" id="sobre">
         <div class="interface">
+          <span class="section-kicker" data-i18n data-pt="Sobre" data-en="About">Sobre</span>
           <div class="flex">
-            <div class="img-sobre">
-              <img src="images/modelo.jpg" alt="Foto de Elton Silva" />
-            </div>
-
             <div class="txt-sobre">
-              <h2>MUITO PRAZER, <span>SOU ELTON SILVA.</span></h2>
-              <p>
-                Meu nome é Elton Silva, tenho 22 anos e estou cursando Análise e
-                Desenvolvimento de Sistemas no SENAC São Paulo. Possuo
-                experiência na área de dados, com habilidades em Python, SQL, R
-                e Power BI, atuando na manipulação e análise de informações, bem
-                como na criação de dashboards e visualizações de dados (Dataviz)
-                que apoiam a tomada de decisão. Sou proativo, ágil e
-                comprometido com resultados, sempre buscando aplicar soluções
-                práticas e eficientes em projetos de dados.
+              <h2 class="titulo-esq" data-i18n data-pt="Muito prazer, sou o <span>Elton.</span>" data-en="Nice to meet you, I'm <span>Elton.</span>">
+                Muito prazer, sou o <span>Elton.</span>
+              </h2>
+              <p data-i18n
+                data-pt="Atuo na criação de pipelines de dados, processos ETL, modelagem analítica, automação de relatórios e desenvolvimento de indicadores (KPIs), utilizando Python, SQL, PySpark, Databricks, Power BI e R. Tenho experiência no processamento de grandes volumes de dados, aplicação de Machine Learning, análises estatísticas e identificação de padrões que apoiam a tomada de decisão."
+                data-en="I create data pipelines, ETL processes, analytical models, report automation and performance indicators (KPIs) using Python, SQL, PySpark, Databricks, Power BI and R. I have experience processing large volumes of data, applying Machine Learning, statistical analysis and pattern detection to support decision-making.">
+                Atuo na criação de pipelines de dados, processos ETL, modelagem analítica, automação de relatórios e desenvolvimento de indicadores (KPIs), utilizando Python, SQL, PySpark, Databricks, Power BI e R. Tenho experiência no processamento de grandes volumes de dados, aplicação de Machine Learning, análises estatísticas e identificação de padrões que apoiam a tomada de decisão.
+              </p>
+              <p data-i18n
+                data-pt="Meu foco é combinar engenharia de dados, analytics e automação para aumentar a eficiência operacional, garantir a qualidade das informações e gerar decisões orientadas por dados."
+                data-en="My focus is to combine data engineering, analytics and automation to increase operational efficiency, ensure information quality and drive data-driven decisions.">
+                Meu foco é combinar engenharia de dados, analytics e automação para aumentar a eficiência operacional, garantir a qualidade das informações e gerar decisões orientadas por dados.
               </p>
 
-              <p></p>
-
-              <p>
-                Sou aluno formado no programa Aspire Leaders da Harvard Business
-                School e possuo certificação de inglês avançado, além de
-                certificações em Power BI, SQL e R Studio. Essa combinação de
-                formação acadêmica, certificações e experiência prática me
-                permite contribuir de forma estratégica e eficaz em projetos que
-                envolvem análise, visualização e interpretação de dados.
-              </p>
+              <ul class="fatos">
+                <li><i class="bi bi-geo-alt"></i> <span data-i18n data-pt="São Paulo, SP" data-en="São Paulo, Brazil">São Paulo, SP</span></li>
+                <li><i class="bi bi-stars"></i> <span>Aspire Leaders · Harvard 2025</span></li>
+                <li><i class="bi bi-translate"></i> <span data-i18n data-pt="Inglês e Espanhol Avançados" data-en="Advanced English &amp; Spanish">Inglês e Espanhol Avançados</span></li>
+                <li><i class="bi bi-patch-check"></i> <span>CPA-10 · ANBIMA</span></li>
+              </ul>
 
               <div class="btn-social">
-                <a
-                  href="https://www.linkedin.com/in/elltonjose/"
-                  target="_blank"
-                >
+                <a href="https://www.linkedin.com/in/elltonjose/" target="_blank" rel="noopener" aria-label="LinkedIn">
                   <button><i class="bi bi-linkedin"></i></button>
                 </a>
-                <a href="https://github.com/elltuu" target="_blank">
+                <a href="https://github.com/elltuu" target="_blank" rel="noopener" aria-label="GitHub">
                   <button><i class="bi bi-github"></i></button>
                 </a>
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=eltonjs11@gmail.com"
-                  target="_blank"
-                >
-                  <button><i class="bi bi-envelope-at"></i></button>
+                <a href="mailto:eltonjs11@gmail.com" aria-label="E-mail">
+                  <button><i class="bi bi-envelope"></i></button>
                 </a>
               </div>
-              <!--btn-social-->
             </div>
-            <!--txt-sobre-->
           </div>
-          <!--flex-->
         </div>
-        <!--interface-->
       </section>
-      <!--sobre-->
 
       <!-- ===========================
-                  PORTFÓLIO
-          ============================ -->
+             COMPETÊNCIAS
+        ============================ -->
+      <section class="especialidades" id="skills">
+        <div class="interface">
+          <span class="section-kicker" data-i18n data-pt="Competências" data-en="Skills">Competências</span>
+          <h2 class="titulo" data-i18n data-pt="O que eu faço" data-en="What I do">O que eu faço</h2>
+
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-bar-chart-line"></i>
+              <h3 data-i18n data-pt="Dados <span class='amp'>&amp;</span> BI" data-en="Data <span class='amp'>&amp;</span> BI">Dados <span class="amp">&amp;</span> BI</h3>
+              <div class="tags">
+                <span>Power BI</span><span>DAX</span><span>Power Query</span>
+                <span>RStudio</span><span>R Shiny</span><span>Looker Studio</span>
+                <span data-i18n data-pt="Excel Avançado" data-en="Advanced Excel">Excel Avançado</span>
+              </div>
+              <p data-i18n
+                data-pt="Dashboards e relatórios interativos, modelagem de dados e KPIs para apoio à decisão (Actual x Forecast x Budget x Last Year)."
+                data-en="Interactive dashboards and reports, data modeling and KPIs for decision support (Actual x Forecast x Budget x Last Year).">
+                Dashboards e relatórios interativos, modelagem de dados e KPIs para apoio à decisão (Actual x Forecast x Budget x Last Year).
+              </p>
+            </div>
+
+            <div class="especialidades-box">
+              <i class="bi bi-cpu"></i>
+              <h3 data-i18n data-pt="Dados <span class='amp'>&amp;</span> IA" data-en="Data <span class='amp'>&amp;</span> AI">Dados <span class="amp">&amp;</span> IA</h3>
+              <div class="tags">
+                <span>Python</span><span>SQL</span><span>PySpark</span><span>R</span>
+                <span>Databricks</span><span>ETL</span><span>Machine Learning</span>
+                <span>Claude Code</span><span>Power Automate</span>
+              </div>
+              <p data-i18n
+                data-pt="Pipelines de dados, automações com Inteligência Artificial e modelos preditivos para identificar padrões e ganhar eficiência."
+                data-en="Data pipelines, AI-powered automations and predictive models to spot patterns and gain efficiency.">
+                Pipelines de dados, automações com Inteligência Artificial e modelos preditivos para identificar padrões e ganhar eficiência.
+              </p>
+            </div>
+
+            <div class="especialidades-box">
+              <i class="bi bi-people"></i>
+              <h3 data-i18n data-pt="Comportamentais" data-en="Behavioral">Comportamentais</h3>
+              <div class="tags">
+                <span data-i18n data-pt="Liderança" data-en="Leadership">Liderança</span>
+                <span data-i18n data-pt="Trabalho em equipe" data-en="Teamwork">Trabalho em equipe</span>
+                <span data-i18n data-pt="Comunicação" data-en="Communication">Comunicação</span>
+                <span data-i18n data-pt="Adaptabilidade" data-en="Adaptability">Adaptabilidade</span>
+                <span data-i18n data-pt="Resolução de problemas" data-en="Problem solving">Resolução de problemas</span>
+                <span data-i18n data-pt="Visão de negócio" data-en="Business acumen">Visão de negócio</span>
+              </div>
+              <p data-i18n
+                data-pt="Profissional colaborativo e orientado a resultados, com facilidade para traduzir dados complexos em informação clara para diferentes áreas."
+                data-en="Collaborative, results-driven professional, able to translate complex data into clear information for different teams.">
+                Profissional colaborativo e orientado a resultados, com facilidade para traduzir dados complexos em informação clara para diferentes áreas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===========================
+             EXPERIÊNCIA
+        ============================ -->
+      <section class="experiencia" id="experiencia">
+        <div class="interface">
+          <span class="section-kicker" data-i18n data-pt="Trajetória" data-en="Journey">Trajetória</span>
+          <h2 class="titulo" data-i18n data-pt="Experiência" data-en="Experience">Experiência</h2>
+
+          <div class="timeline">
+            <div class="exp-card">
+              <div class="exp-head">
+                <div>
+                  <h3 data-i18n data-pt="Analista de Dados Júnior" data-en="Junior Data Analyst">Analista de Dados Júnior</h3>
+                  <p class="exp-empresa">Instituto Dante Pazzanese de Cardiologia</p>
+                </div>
+                <span class="exp-periodo" data-i18n data-pt="Ago 2024 — Atual · São Paulo, SP" data-en="Aug 2024 — Present · São Paulo, Brazil">Ago 2024 — Atual · São Paulo, SP</span>
+              </div>
+              <ul>
+                <li data-i18n
+                  data-pt="Construção de pipelines de dados com Python e SQL para extração, transformação e integração de grandes volumes de dados de fontes científicas, administrativas e financeiras."
+                  data-en="Building data pipelines with Python and SQL to extract, transform and integrate large volumes of scientific, administrative and financial data.">
+                  Construção de pipelines de dados com Python e SQL para extração, transformação e integração de grandes volumes de dados de fontes científicas, administrativas e financeiras.
+                </li>
+                <li data-i18n
+                  data-pt="Desenvolvimento de dashboards e relatórios gerenciais interativos em Power BI, Excel, R (scripts) e Shiny, com foco em indicadores de performance (KPIs)."
+                  data-en="Development of interactive management dashboards and reports in Power BI, Excel, R (scripts) and Shiny, focused on performance indicators (KPIs).">
+                  Desenvolvimento de dashboards e relatórios gerenciais interativos em Power BI, Excel, R (scripts) e Shiny, com foco em indicadores de performance (KPIs).
+                </li>
+                <li data-i18n
+                  data-pt="Monitoramento de dados com Inteligência Artificial aplicada, criando scripts estruturados e automações (incluindo integração com Power Automate)."
+                  data-en="Data monitoring with applied Artificial Intelligence, creating structured scripts and automations (including Power Automate integration).">
+                  Monitoramento de dados com Inteligência Artificial aplicada, criando scripts estruturados e automações (incluindo integração com Power Automate).
+                </li>
+                <li data-i18n
+                  data-pt="Processamento e análise de Big Data em ambiente escalável (Databricks), com integração a soluções de Business Intelligence e desenvolvimento de modelos preditivos."
+                  data-en="Big Data processing and analysis in a scalable environment (Databricks), integrated with Business Intelligence solutions and predictive model development.">
+                  Processamento e análise de Big Data em ambiente escalável (Databricks), com integração a soluções de Business Intelligence e desenvolvimento de modelos preditivos.
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-head">
+                <div>
+                  <h3 data-i18n data-pt="Assistente Administrativo" data-en="Administrative Assistant">Assistente Administrativo</h3>
+                  <p class="exp-empresa">Instituto Dante Pazzanese de Cardiologia</p>
+                </div>
+                <span class="exp-periodo" data-i18n data-pt="São Paulo, SP" data-en="São Paulo, Brazil">São Paulo, SP</span>
+              </div>
+              <ul>
+                <li data-i18n
+                  data-pt="Suporte à gestão de cursos intensivos de cardiologia da American Heart Association (AHA)."
+                  data-en="Support to the management of intensive American Heart Association (AHA) cardiology courses.">
+                  Suporte à gestão de cursos intensivos de cardiologia da American Heart Association (AHA).
+                </li>
+                <li data-i18n
+                  data-pt="Estruturação de dados e elaboração de dashboards analíticos em Power BI e Looker Studio."
+                  data-en="Data structuring and development of analytical dashboards in Power BI and Looker Studio.">
+                  Estruturação de dados e elaboração de dashboards analíticos em Power BI e Looker Studio.
+                </li>
+                <li data-i18n
+                  data-pt="Projetos estratégicos em colaboração com as diretorias, voltados à melhoria da gestão administrativa e da comunicação interna e externa."
+                  data-en="Strategic projects in collaboration with the board, aimed at improving administrative management and internal/external communication.">
+                  Projetos estratégicos em colaboração com as diretorias, voltados à melhoria da gestão administrativa e da comunicação interna e externa.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===========================
+             PORTFÓLIO
+        ============================ -->
       <section class="portifolio" id="portfolio">
         <div class="interface">
-          <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
+          <span class="section-kicker" data-i18n data-pt="Projetos" data-en="Projects">Projetos</span>
+          <h2 class="titulo" data-i18n data-pt="Alguns trabalhos" data-en="Selected work">Alguns trabalhos</h2>
+          <p class="sub-titulo" data-i18n
+            data-pt="Uma seleção de projetos de dados, BI e automação. Novos estudos de caso a caminho."
+            data-en="A selection of data, BI and automation projects. New case studies on the way.">
+            Uma seleção de projetos de dados, BI e automação. Novos estudos de caso a caminho.
+          </p>
+
           <div class="flex">
-            <!-- DASHBOARD NEGÓCIOS -->
-            <a
-              href="https://app.powerbi.com/view?r=LINK_DASHBOARD_NEGOCIOS"
-              target="_blank"
-              class="img-port"
-              style="background-image: url('images/portióliogreen.png')"
-            >
-              <div class="overlay">Negócios</div>
-            </a>
+            <!-- PROJETO 1 -->
+            <article class="proj-card">
+              <div class="proj-thumb">
+                <span class="proj-badge" data-i18n data-pt="Profissional" data-en="Professional">Profissional</span>
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div class="proj-body">
+                <span class="proj-tool">R · Shiny · RStudio</span>
+                <h3 data-i18n data-pt="Dashboards Interativos em R/Shiny" data-en="Interactive R/Shiny Dashboards">Dashboards Interativos em R/Shiny</h3>
+                <p data-i18n
+                  data-pt="Painéis analíticos em R/Shiny para acompanhamento de indicadores e estudos, com integração a APIs, tratamento de dados e visualizações dinâmicas."
+                  data-en="Analytical R/Shiny dashboards for tracking indicators and studies, with API integration, data processing and dynamic visualizations.">
+                  Painéis analíticos em R/Shiny para acompanhamento de indicadores e estudos, com integração a APIs, tratamento de dados e visualizações dinâmicas.
+                </p>
+              </div>
+            </article>
 
-            <!-- DASHBOARD SAÚDE -->
-            <a
-              href="https://app.powerbi.com/view?r=LINK_DASHBOARD_SAUDE"
-              target="_blank"
-              class="img-port"
-              style="background-image: url('images/portióliogreen.png')"
-            >
-              <div class="overlay">Saúde</div>
-            </a>
+            <!-- PROJETO 2 -->
+            <article class="proj-card">
+              <div class="proj-thumb">
+                <span class="proj-badge" data-i18n data-pt="Profissional" data-en="Professional">Profissional</span>
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <div class="proj-body">
+                <span class="proj-tool">Power BI · DAX</span>
+                <h3 data-i18n data-pt="Dashboard de KPIs <span class='amp'>&amp;</span> Performance" data-en="KPI <span class='amp'>&amp;</span> Performance Dashboard">Dashboard de KPIs <span class="amp">&amp;</span> Performance</h3>
+                <p data-i18n
+                  data-pt="Painel gerencial com comparativo Actual x Forecast x Budget x Last Year e análise de variações para apoio à tomada de decisão."
+                  data-en="Management dashboard with Actual x Forecast x Budget x Last Year comparison and variance analysis to support decision-making.">
+                  Painel gerencial com comparativo Actual x Forecast x Budget x Last Year e análise de variações para apoio à tomada de decisão.
+                </p>
+              </div>
+            </article>
 
-            <!-- DASHBOARD LOGÍSTICA -->
-            <a
-              href="https://app.powerbi.com/view?r=LINK_DASHBOARD_LOGISTICA"
-              target="_blank"
-              class="img-port"
-              style="background-image: url('images/portióliogreen.png')"
-            >
-              <div class="overlay">Logística</div>
+            <!-- PROJETO 3 -->
+            <article class="proj-card">
+              <div class="proj-thumb">
+                <span class="proj-badge" data-i18n data-pt="IA &amp; Automação" data-en="AI &amp; Automation">IA &amp; Automação</span>
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div class="proj-body">
+                <span class="proj-tool">Claude Code · Python · Power Automate</span>
+                <h3 data-i18n data-pt="Automação de Processos com IA" data-en="AI-Powered Process Automation">Automação de Processos com IA</h3>
+                <p data-i18n
+                  data-pt="Fluxos automatizados de extração, tratamento e monitoramento de dados usando Inteligência Artificial, reduzindo trabalho manual e tempo de atualização."
+                  data-en="Automated flows for data extraction, processing and monitoring using Artificial Intelligence, reducing manual work and refresh time.">
+                  Fluxos automatizados de extração, tratamento e monitoramento de dados usando Inteligência Artificial, reduzindo trabalho manual e tempo de atualização.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===========================
+             FORMAÇÃO & CERTIFICAÇÕES
+        ============================ -->
+      <section class="formacao" id="formacao">
+        <div class="interface">
+          <span class="section-kicker" data-i18n data-pt="Formação" data-en="Education">Formação</span>
+          <h2 class="titulo" data-i18n data-pt="Formação <span class='amp'>&amp;</span> Certificações" data-en="Education <span class='amp'>&amp;</span> Certifications">Formação <span class="amp">&amp;</span> Certificações</h2>
+
+          <div class="form-grid">
+            <div class="form-card destaque">
+              <i class="bi bi-mortarboard"></i>
+              <h3 data-i18n data-pt="Análise e Desenvolvimento de Sistemas" data-en="Systems Analysis &amp; Development">Análise e Desenvolvimento de Sistemas</h3>
+              <p>Senac SP · <span data-i18n data-pt="Cursando" data-en="In progress">Cursando</span></p>
+            </div>
+            <div class="form-card destaque">
+              <i class="bi bi-cloud-arrow-up"></i>
+              <h3>Microsoft AI for Tech — Azure Databricks</h3>
+              <p>DIO · <span data-i18n data-pt="Concluído" data-en="Completed">Concluído</span></p>
+            </div>
+            <div class="form-card destaque">
+              <i class="bi bi-stars"></i>
+              <h3>Aspire Leaders Program</h3>
+              <p>Harvard University · 2025 · <span data-i18n data-pt="Concluído" data-en="Completed">Concluído</span></p>
+            </div>
+            <div class="form-card destaque">
+              <i class="bi bi-patch-check"></i>
+              <h3>CPA-10 — ANBIMA</h3>
+              <p data-i18n data-pt="Certificação do mercado financeiro" data-en="Financial market certification">Certificação do mercado financeiro</p>
+            </div>
+            <div class="form-card">
+              <i class="bi bi-bar-chart"></i>
+              <h3>Power BI para BI <span class="amp">&amp;</span> Data Science</h3>
+              <p>Data Science Academy · <span data-i18n data-pt="Concluído" data-en="Completed">Concluído</span></p>
+            </div>
+            <div class="form-card">
+              <i class="bi bi-code-slash"></i>
+              <h3>SQL <span class="amp">&amp;</span> Python — Básico ao Avançado</h3>
+              <p>Udemy · <span data-i18n data-pt="Concluído" data-en="Completed">Concluído</span></p>
+            </div>
+            <div class="form-card">
+              <i class="bi bi-shield-check"></i>
+              <h3 data-i18n data-pt="Segurança da Informação <span class='amp'>&amp;</span> LGPD" data-en="Information Security <span class='amp'>&amp;</span> Data Privacy">Segurança da Informação <span class="amp">&amp;</span> LGPD</h3>
+              <p>ENAP · <span data-i18n data-pt="Concluído" data-en="Completed">Concluído</span></p>
+            </div>
+            <div class="form-card">
+              <i class="bi bi-translate"></i>
+              <h3 data-i18n data-pt="Inglês Avançado" data-en="Advanced English">Inglês Avançado</h3>
+              <p>IW English School · <span data-i18n data-pt="Concluído" data-en="Completed">Concluído</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===========================
+             CONTATO
+        ============================ -->
+      <section class="contato" id="contato">
+        <div class="interface">
+          <span class="section-kicker" data-i18n data-pt="Contato" data-en="Contact">Contato</span>
+          <h2 class="titulo" data-i18n data-pt="Vamos conversar?" data-en="Let's talk?">Vamos conversar?</h2>
+          <p class="sub-titulo" data-i18n
+            data-pt="Aberto a novos desafios e oportunidades em Dados, Business Intelligence e Tecnologia."
+            data-en="Open to new challenges and opportunities in Data, Business Intelligence and Technology.">
+            Aberto a novos desafios e oportunidades em Dados, Business Intelligence e Tecnologia.
+          </p>
+          <div class="contato-cta">
+            <a href="mailto:eltonjs11@gmail.com">
+              <button class="btn-primary"><i class="bi bi-envelope"></i> eltonjs11@gmail.com</button>
+            </a>
+            <a href="https://www.linkedin.com/in/elltonjose/" target="_blank" rel="noopener">
+              <button class="btn-ghost"><i class="bi bi-linkedin"></i> LinkedIn</button>
             </a>
           </div>
-          <!--flex-->
         </div>
-        <!--interface-->
       </section>
-      <!--portifolio-->
     </main>
 
     <footer>
       <div class="interface">
         <div class="footer-flex">
-          <!-- Redes sociais (todas à esquerda) -->
+          <div class="footer-brand">
+            <span class="logo-mark">ES</span>
+            <div>
+              <strong>Elton Jose da Silva</strong>
+              <p data-i18n data-pt="Analista de Dados &amp; BI" data-en="Data Analyst &amp; BI">Analista de Dados &amp; BI</p>
+            </div>
+          </div>
+
           <div class="btn-social">
-            <a href="https://www.linkedin.com/in/elltonjose/" target="_blank">
+            <a href="https://www.linkedin.com/in/elltonjose/" target="_blank" rel="noopener" aria-label="LinkedIn">
               <button><i class="bi bi-linkedin"></i></button>
             </a>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=eltonjs11@gmail.com"
-              target="_blank"
-            >
-              <button><i class="bi bi-envelope-at"></i></button>
-            </a>
-            <a href="https://github.com/elltuu" target="_blank">
+            <a href="https://github.com/elltuu" target="_blank" rel="noopener" aria-label="GitHub">
               <button><i class="bi bi-github"></i></button>
             </a>
+            <a href="mailto:eltonjs11@gmail.com" aria-label="E-mail">
+              <button><i class="bi bi-envelope"></i></button>
+            </a>
           </div>
-          <!--btn-social-->
-
-          <!-- Email à direita -->
-          <div class="email-footer">
-            <p>
-              <i class="bi bi-envelope-at"></i>
-              <a href="mailto:eltonjs11@gmail.com">eltonjs11@gmail.com</a>
-            </p>
-          </div>
-          <!--email-footer-->
         </div>
-        <!--footer-flex-->
+        <p class="copy">© <span id="ano"></span> Elton Jose da Silva.</p>
       </div>
-      <!--interface-->
     </footer>
 
-    <!-- OPEN/CLOSE THE MENU JAVASCRIPT -->
     <script src="menu.js" defer></script>
-
-    <!-- OPEN/CLOSE THE MENU JAVASCRIPT -->
   </body>
 </html>
