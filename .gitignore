@@ -1,0 +1,17 @@
+# ===== Dados do dataset Olist (baixar do Kaggle — NÃO versionar) =====
+Dashboard/olist_data/
+Dashboard/*.zip
+Dashboard/*.rds
+
+# ===== Metadados locais de deploy (shinyapps.io) =====
+Dashboard/rsconnect/
+
+# ===== R =====
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# ===== Sistema =====
+Thumbs.db
+.DS_Store
