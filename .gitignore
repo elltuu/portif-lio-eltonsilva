@@ -6,6 +6,15 @@ Dashboard/*.rds
 # ===== Metadados locais de deploy (shinyapps.io) =====
 Dashboard/rsconnect/
 
+# ===== Radar de Voz do Consumidor (Python) =====
+# Intermediarios regeneraveis pelo pipeline — nao versionar.
+# O painel so precisa de: dados/voc_resultado.parquet, dados/resumo.json,
+# dados/metrica_modelo.json e modelo/sentimento.joblib (esses VAO pro git).
+VozConsumidor/dados/01_reviews.parquet
+VozConsumidor/dados/03_classificado.parquet
+VozConsumidor/dados/04_temas.parquet
+VozConsumidor/**/__pycache__/
+
 # ===== R =====
 .Rhistory
 .RData

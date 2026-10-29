@@ -1,0 +1,27 @@
+{
+  "total": 42293,
+  "nota_media": 3.696498238479181,
+  "pct_neg": 0.261343484737427,
+  "pct_pos": 0.5965762655758636,
+  "pct_neutro": 0.14208024968670938,
+  "top_dores": [
+    [
+      "Produto nao recebido",
+      2569
+    ],
+    [
+      "Prazo de entrega",
+      2012
+    ],
+    [
+      "Atendimento / suporte",
+      1113
+    ]
+  ],
+  "pior_categoria": {
+    "categoria": "office_furniture",
+    "pct_neg": 0.37846655791190864,
+    "total": 613
+  },
+  "narrativa": "Foram analisadas 42.293 avaliacoes com comentario. A nota media e de 3,70/5, e 26.1% das manifestacoes foram classificadas como negativas pelo modelo.\n\nEntre as avaliacoes negativas, as dores mais recorrentes sao: Produto nao recebido (2.569 citacoes); Prazo de entrega (2.012 citacoes); Atendimento / suporte (1.113 citacoes). O tema 'Produto nao recebido' lidera e deve ser a prioridade imediata de atuacao.\n\nA categoria com maior proporcao de insatisfacao e 'office_furniture', com 37.8% de avaliacoes negativas (613 reviews) — um ponto de atencao para revisao de sortimento, fornecedor ou logistica.\n\nNo lado positivo, 59.7% dos clientes manifestaram satisfacao, com elogios concentrados em agilidade de entrega e qualidade percebida — reforcando o que ja funciona bem."
+}

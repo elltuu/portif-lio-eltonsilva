@@ -1,0 +1,14 @@
+# Tema do painel "Radar de Voz do Consumidor" (VozConsumidor/app.py).
+# O Streamlit Community Cloud le a configuracao a partir da RAIZ do
+# repositorio, por isso este arquivo precisa ficar aqui (e nao so dentro
+# da subpasta do app). Garante o tema claro com as cores do portfolio.
+[theme]
+base = "light"
+primaryColor = "#b08a3e"
+backgroundColor = "#f7f8fa"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#1f2937"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
