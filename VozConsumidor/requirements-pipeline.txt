@@ -1,0 +1,6 @@
+# Dependencias do PIPELINE de dados/modelo (pasta pipeline/).
+# Usadas so para (re)gerar os artefatos localmente — nao vao para o Cloud.
+pandas>=2.2
+scikit-learn>=1.5
+pyarrow>=16
+joblib>=1.4
